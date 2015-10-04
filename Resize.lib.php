@@ -1,7 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: blana
- * Date: 04.10.2015
- * Time: 17:21
- */
+
+// Load the ImageWorkshop library
+require_once 'vendor/autoload.php';
+
+class ResizeLib
+{
+    public $version;
+    public $image;
+
+    public function __construct()
+    {
+        $this->version = '1.0.0';
+    }
+}
