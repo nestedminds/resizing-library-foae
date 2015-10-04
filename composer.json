@@ -1,0 +1,12 @@
+{
+    "name": "blana/resizing-library-foae",
+    "require": {
+        "sybio/image-workshop": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Lucian",
+            "email": "eastercow@gmail.com"
+        }
+    ]
+}
