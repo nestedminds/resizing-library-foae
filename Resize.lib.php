@@ -2,7 +2,9 @@
 
 // Load the ImageWorkshop library
 require_once 'vendor/autoload.php';
+// Load the FileUpload utility
 require_once 'FileUpload.trait.php';
+
 /**
  * Class ResizeLib
  * --------------------------------------------------

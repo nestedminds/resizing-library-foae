@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$.noConflict();
+(document).ready(function($){
 
     /* Accordion */
     $("#accordion").accordion({
