@@ -1,15 +1,43 @@
 $.noConflict();
-(document).ready(function($){
+jQuery(document).ready(function($){
 
     /* Accordion */
     $("#accordion").accordion({
         heightStyle: "content"
     });
 
-    /* upload buttons */
-    var selectFileButton = $('#select-file-button').button();
-    var buttonUpload = $('#button-upload').button({
-        disabled: true
+    /* Upload buttons */
+    var buttonSelectFile = $('#select-file-button');
+    var buttonUpload = $('#button-upload');
+    buttonUpload.prop('disabled', true);
+
+    /*
+    If a file is selected for upload,
+    unlock the upload button and send the ajax request
+    */
+    buttonSelectFile.change(function(){
+        "use strict";
+        if ($(this).val()) {
+
+            console.log('File ready:' + $(this).val());
+            buttonUpload.prop('disabled', false).click(function(){
+
+                $(this).prop('disabled', true);
+                console.log('Uploading file...');
+                $('#ui-id-2').html("<img src='http://hideawayportugal.com/images/LoadingSpinner.gif' height='12' /> Uploading image...");
+
+                $.ajax({
+                    url: 'uploadAjax.php',
+
+                })
+                    .done(function(){
+                        console.log('Success');
+                    })
+                    .fail(function(){
+                        console.log('FAILED');
+                    });
+            });
+        }
     });
 
     /* Select options buttons */

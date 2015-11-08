@@ -11,7 +11,6 @@ require_once 'Resize.lib.php';
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900,900italic,700italic,500italic,400italic,300italic,100italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div id="container">
@@ -45,5 +44,6 @@ require_once 'Resize.lib.php';
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
