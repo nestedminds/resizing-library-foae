@@ -44,4 +44,14 @@ jQuery(document).ready(function($){
     $("#check").button();
     $("#format").buttonset();
 
+    /* Not yet finished dialog */
+    $("#dialog-message").dialog({
+        modal: true,
+        buttons: {
+            OK: function () {
+                $(this).dialog("close");
+            }
+        }
+    });
+
 });

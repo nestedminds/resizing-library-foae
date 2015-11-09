@@ -11,16 +11,26 @@ require_once 'Resize.lib.php';
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900,900italic,700italic,500italic,400italic,300italic,100italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="content-area">
+
+            <div id="dialog-message" title="Notice">
+                <p>
+                    The UI part is incomplete (for now)
+                </p>
+            </div>
+
             <div id="accordion">
+
                 <h3>Select and image</h3>
                 <div>
                     <input type="file" id="select-file-button" value="Select an image to resize" />
                     <button id="button-upload">Upload</button>
                 </div>
+
                 <h3>Select the options</h3>
                 <div>
                     <strong>Choose how your image should be handled</strong>
@@ -32,6 +42,7 @@ require_once 'Resize.lib.php';
                         <input type="checkbox" id="check3"><label for="check3">U</label>
                     </div>
                 </div>
+
                 <h3>Download / Save</h3>
                 <div>
                     <strong>Download or save the URL to your image</strong>
@@ -41,9 +52,9 @@ require_once 'Resize.lib.php';
                     <div>Preview:</div>
                     <small class="delete">Delete</small>
                 </div>
+
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

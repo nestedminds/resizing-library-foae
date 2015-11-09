@@ -64,3 +64,11 @@ select {
     margin-top: 25px;
     font-size: xx-small;
 }
+
+#accordion {
+    width: 350px;
+}
+
+#dialog-message {
+    font-size: 0.9rem;
+}
