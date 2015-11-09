@@ -47,7 +47,7 @@ trait FileUpload
      */
     public function storeImage()
     {
-        if ($_FILES[$this->inputName] && in_array($_FILES[$this->inputName]['type'], $this->allowedExtensions)){
+        if ($_FILES[$this->inputName] && in_array($_FILES[$this->inputName]['type'], $this->allowedExtensions)) {
             (is_uploaded_file($_FILES[$this->inputName]['tmp_name'])) ? '' : die('Error #98128361 while uploading the file.');
             move_uploaded_file($_FILES[$this->inputName]['tmp_name'], $this->uploadsFolder . $_FILES[$this->inputName]['name']);
             return true;
